@@ -1,1 +1,3 @@
+pakage main
+
 function main() {} 
