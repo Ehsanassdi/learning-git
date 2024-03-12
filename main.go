@@ -1,3 +1,0 @@
-pakage main
-
-function main() {} 
