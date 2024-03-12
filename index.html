@@ -1,9 +1,40 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Exercise</title>
+    <script src="script1.js"></script>
 </head>
 <body>
-<p> First paragraph.</p>
+    <h1>Click the buttons!</h1>
+    
+    <!-- First button to change text color to red -->
+    <button id="redButton">Change Text Color to Red</button>
+    
+    <!-- Second button to change text color to blue -->
+    <button id="blueButton">Change Text Color to Blue</button>
+
+    <!-- Paragraph with text to be changed -->
+    <p id="colorChangeText">This text will change color.</p>
+
+    <!-- Embedded JavaScript code within the body section -->
+    <script>
+        // Function to handle button click and change text color
+        function changeTextColor(color) {
+            document.getElementById('colorChangeText').style.color = color;
+        }
+
+        // Attach the event handler for the red button
+        document.getElementById('redButton').addEventListener('click', function() {
+            changeTextColor('red');
+        });
+
+        // Attach the event handler for the blue button
+        document.getElementById('blueButton').addEventListener('click', function() {
+            changeTextColor('blue');
+        });
+    </script>
 </body>
 </html>
